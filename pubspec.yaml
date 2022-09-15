@@ -1,0 +1,50 @@
+name: exceed_resources_frontend
+description: Exceed Resources
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  get: ^4.6.5
+  dio: ^4.0.6
+  dio_cookie_manager: ^2.0.0
+  path_provider: ^2.0.11
+  cookie_jar: ^3.0.1
+  flutter_svg: ^1.1.4
+  file_picker: ^4.6.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  cached_network_image: ^3.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Barlow
+      fonts:
+        - asset: assets/fonts/Barlow/Barlow-Regular.ttf
+        - asset: assets/fonts/Barlow/Barlow-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Barlow/Barlow-Bold.ttf
+          weight: 700
+    - family: Lobster
+      fonts:
+        - asset: assets/fonts/Lobster/Lobster-Regular.ttf
+    - family: Notosan
+      fonts:
+        - asset: assets/fonts/Notosan_Myanmar/Notosan_Myanmar_Regular.ttf
+        - asset: assets/fonts/Notosan_Myanmar/Notosan_Myanmar_Bold.ttf
+          weight: 500
+
+  assets:
+    - assets/images/
+    - assets/icons/
