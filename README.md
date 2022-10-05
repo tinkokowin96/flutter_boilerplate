@@ -1,16 +1,15 @@
-# exceed_resources_frontend
+# Flutter Boilerplate
 
-A new Flutter project.
+## Dependencies
 
-## Getting Started
+- get
+- dio
+- dio_cookie_manager
+- path_provider
+- cookie_jar
+- flutter_svg
+- file_picker
+- hive
+- hive_flutter
+- cached_network_image
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
