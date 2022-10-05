@@ -3,12 +3,13 @@ import 'package:flutter/material.dart';
 
 class AppSize {
   static const xs = 6.0;
-  static const sm = 12.0;
-  static const md = 24.0;
-  static const lg = 48.0;
+  static const sm = 10.0;
+  static const md = 20.0;
+  static const lg = 40.0;
 
   //icon
   static const icoMd = 24.0;
+  static const icoLg = 50.0;
 
   //button
   static const btnWMd = 100.0;
@@ -23,4 +24,5 @@ class AppSize {
   //dropdown
   static const dH = 120.0;
   static const dL = 100.0; //dropdown loading
+
 }

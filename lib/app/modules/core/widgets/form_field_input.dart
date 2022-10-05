@@ -47,10 +47,7 @@ class FormFieldInput extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         title != null
-            ? Text(title!,
-                style: smallText != null
-                    ? AppTheme.of(context).text.h3(context: context)
-                    : AppTheme.of(context).text.h3(context: context))
+            ? Text(title!, style: smallText != null ? AppTheme.text(context: context) : AppTheme.text(context: context))
             : AppSizeBox.zero,
         Column(
           children: [
@@ -68,8 +65,8 @@ class FormFieldInput extends StatelessWidget {
                   focusNode: focusNode,
                   onTap: onTap,
                   style: smallText != null
-                      ? AppTheme.of(context).text.h4(context: context)
-                      : AppTheme.of(context).text.h3(context: context),
+                      ? AppTheme.text(size: EText.h4, context: context)
+                      : AppTheme.text(context: context),
                   decoration: InputDecoration(
                     hintText: hintText,
                     suffix: suffix != null
@@ -79,14 +76,14 @@ class FormFieldInput extends StatelessWidget {
                               padding: const EdgeInsets.all(AppSize.sm),
                               child: Text(
                                 suffix!,
-                                style: AppTheme.of(context).text.h4(context: context, type: EText.primary),
+                                style: AppTheme.text(size: EText.h4, context: context, type: ETextType.primary),
                               ),
                             ),
                           )
                         : AppSizeBox.zero,
                     hintStyle: smallText != null
-                        ? AppTheme.of(context).text.h4(context: context, type: EText.subtitle)
-                        : AppTheme.of(context).text.h3(context: context, type: EText.subtitle),
+                        ? AppTheme.text(size: EText.h4, context: context, type: ETextType.subtitle)
+                        : AppTheme.text(context: context, type: ETextType.subtitle),
                     border: const UnderlineInputBorder(borderSide: BorderSide(color: Colors.black)),
                     focusedBorder: UnderlineInputBorder(
                       borderSide: BorderSide(color: AppTheme.of(context).color.primary),

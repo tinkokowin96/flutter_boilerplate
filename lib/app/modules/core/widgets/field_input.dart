@@ -1,6 +1,7 @@
 import 'package:exceed_resources_frontend/app/modules/core/theme/index.dart';
 import 'package:exceed_resources_frontend/app/modules/core/theme/size.dart';
 import 'package:exceed_resources_frontend/app/modules/core/theme/sizebox.dart';
+import 'package:exceed_resources_frontend/app/modules/core/utils/enum.dart';
 import 'package:flutter/material.dart';
 
 class FieldInput extends StatelessWidget {
@@ -25,14 +26,14 @@ class FieldInput extends StatelessWidget {
                 ? Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Text(title!, style: AppTheme.of(context).text.h4(context: context)),
+                      Text(title!, style: AppTheme.text(size: EText.h4, context: context)),
                       AppSizeBox.sm,
                     ],
                   )
                 : AppSizeBox.zero,
             Expanded(
               child: TextField(
-                style: AppTheme.of(context).text.h4(context: context),
+                style: AppTheme.text(size: EText.h4, context: context),
                 controller: controller,
                 decoration: InputDecoration(
                   contentPadding: const EdgeInsets.only(bottom: AppSize.sm),

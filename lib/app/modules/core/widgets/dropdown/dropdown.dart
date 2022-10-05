@@ -281,7 +281,7 @@ class DopdownItems extends StatelessWidget {
                                               items[index]['type'] != null ? Alignment.centerLeft : Alignment.center,
                                           child: Text(
                                             items[index]['text'],
-                                            style: AppTheme.of(context).text.h3(context: context),
+                                            style: AppTheme.text(context: context),
                                           ),
                                         ),
                                       ),
@@ -290,8 +290,8 @@ class DopdownItems extends StatelessWidget {
                                               color: AppTheme.of(context).color.primary.withOpacity(0.2),
                                               child: Text(
                                                 items[index]['type'],
-                                                style:
-                                                    AppTheme.of(context).text.h4(context: context, type: EText.primary),
+                                                style: AppTheme.text(
+                                                    size: EText.h4, context: context, type: ETextType.primary),
                                               ),
                                             )
                                           : AppSizeBox.zero,
@@ -307,7 +307,7 @@ class DopdownItems extends StatelessWidget {
                                     children: [
                                       Text(
                                         items[index]['text'],
-                                        style: AppTheme.of(context).text.h3(context: context),
+                                        style: AppTheme.text(context: context),
                                       ),
                                       Checkbox(
                                         fillColor: MaterialStateProperty.all<Color>(

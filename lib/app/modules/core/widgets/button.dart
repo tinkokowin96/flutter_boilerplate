@@ -1,6 +1,5 @@
 import 'package:exceed_resources_frontend/app/modules/core/theme/index.dart';
 import 'package:exceed_resources_frontend/app/modules/core/theme/size.dart';
-import 'package:exceed_resources_frontend/app/modules/core/theme/text.dart';
 import 'package:exceed_resources_frontend/app/modules/core/utils/enum.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +33,7 @@ class Button extends StatelessWidget {
         child: Center(
           child: Text(
             text,
-            style: buttonTextStyle ?? AppTheme.of(context).text.h3(context: context, type: EText.white),
+            style: buttonTextStyle ?? AppTheme.text(context: context, type: ETextType.white),
           ),
         ),
       );

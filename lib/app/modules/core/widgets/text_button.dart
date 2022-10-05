@@ -6,14 +6,14 @@ class AppTextButton extends StatelessWidget {
   final String text;
   final Function() onPressed;
   final ESize size;
-  final EText style;
+  final ETextType style;
   final bool disabled;
 
   const AppTextButton({
     Key? key,
     required this.text,
     required this.onPressed,
-    this.style = EText.primary,
+    this.style = ETextType.primary,
     this.size = ESize.md,
     this.disabled = false,
   }) : super(key: key);
@@ -23,10 +23,10 @@ class AppTextButton extends StatelessWidget {
     late final TextStyle textStyle;
     switch (size) {
       case ESize.sm:
-        textStyle = AppTheme.of(context).text.h4(context: context, type: style);
+        textStyle = AppTheme.text(size: EText.h4, context: context, type: style);
         break;
       case ESize.md:
-        textStyle = AppTheme.of(context).text.h3(context: context, type: style);
+        textStyle = AppTheme.text(context: context, type: style);
         break;
       default:
     }

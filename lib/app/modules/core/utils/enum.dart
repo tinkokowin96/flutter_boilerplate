@@ -1,4 +1,6 @@
-enum EText { body, error, primary, white, subtitle }
+enum ETextType { body, error, primary, white, subtitle }
+
+enum EText { h1, h2, h3, h4, h5 }
 
 enum EDevice {
   mobile,
