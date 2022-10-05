@@ -50,16 +50,12 @@ class AppThemeData extends ChangeNotifier {
     text: AppText(
       h1: ({
         required BuildContext context,
-        type = EText.title,
+        type = EText.body,
         weight = 400,
         fontFamily = 'Barlow',
       }) =>
           TextStyle(
-        color: type == EText.title
-            ? const Color(0xFF565656)
-            : type == EText.error
-                ? const Color(0xFFD1512D)
-                : Colors.black,
+        color: getTextColor(type, context),
         fontSize: getDevice(context) == EDevice.mobile
             ? 18
             : getDevice(context) == EDevice.tablet
@@ -69,16 +65,12 @@ class AppThemeData extends ChangeNotifier {
       ),
       h3: ({
         required BuildContext context,
-        type = EText.title,
+        type = EText.body,
         weight = 400,
         fontFamily = 'Barlow',
       }) =>
           TextStyle(
-        color: type == EText.title
-            ? const Color(0xFF565656)
-            : type == EText.error
-                ? const Color(0xFFD1512D)
-                : Colors.black,
+        color: getTextColor(type, context),
         fontSize: getDevice(context) == EDevice.mobile
             ? 14
             : getDevice(context) == EDevice.tablet
@@ -88,16 +80,12 @@ class AppThemeData extends ChangeNotifier {
       ),
       h4: ({
         required BuildContext context,
-        type = EText.title,
+        type = EText.body,
         weight = 400,
         fontFamily = 'Barlow',
       }) =>
           TextStyle(
-        color: type == EText.title
-            ? const Color(0xFF565656)
-            : type == EText.error
-                ? const Color(0xFFD1512D)
-                : Colors.black,
+        color: getTextColor(type, context),
         fontSize: getDevice(context) == EDevice.mobile
             ? 12
             : getDevice(context) == EDevice.tablet
@@ -107,16 +95,12 @@ class AppThemeData extends ChangeNotifier {
       ),
       h5: ({
         required BuildContext context,
-        type = EText.title,
+        type = EText.body,
         weight = 400,
         fontFamily = 'Barlow',
       }) =>
           TextStyle(
-        color: type == EText.title
-            ? const Color(0xFF565656)
-            : type == EText.error
-                ? const Color(0xFFD1512D)
-                : Colors.black,
+        color: getTextColor(type, context),
         fontSize: getDevice(context) == EDevice.mobile
             ? 10
             : getDevice(context) == EDevice.tablet
@@ -127,10 +111,11 @@ class AppThemeData extends ChangeNotifier {
     ),
     color: const AppColor(
       primary: Color(0xFFE38B29),
-      secondary: Color(0xFF565656),
+      subtitle: Color(0xFF565656),
       container: Color(0xFFFAFAFA),
       error: Color(0xFFD1512D),
       background: Colors.white,
+      disabled: Color(0xFF898989),
     ),
   );
 
@@ -138,16 +123,12 @@ class AppThemeData extends ChangeNotifier {
     text: AppText(
       h1: ({
         required BuildContext context,
-        type = EText.title,
+        type = EText.body,
         weight = 400,
         fontFamily = 'Barlow',
       }) =>
           TextStyle(
-        color: type == EText.title
-            ? const Color(0xFF565656)
-            : type == EText.error
-                ? const Color(0xFFD1512D)
-                : Colors.black,
+        color: getTextColor(type, context),
         fontSize: getDevice(context) == EDevice.mobile
             ? 18
             : getDevice(context) == EDevice.tablet
@@ -157,16 +138,12 @@ class AppThemeData extends ChangeNotifier {
       ),
       h3: ({
         required BuildContext context,
-        type = EText.title,
+        type = EText.body,
         weight = 400,
         fontFamily = 'Barlow',
       }) =>
           TextStyle(
-        color: type == EText.title
-            ? const Color(0xFF565656)
-            : type == EText.error
-                ? const Color(0xFFD1512D)
-                : Colors.black,
+        color: getTextColor(type, context),
         fontSize: getDevice(context) == EDevice.mobile
             ? 14
             : getDevice(context) == EDevice.tablet
@@ -176,16 +153,12 @@ class AppThemeData extends ChangeNotifier {
       ),
       h4: ({
         required BuildContext context,
-        type = EText.title,
+        type = EText.body,
         weight = 400,
         fontFamily = 'Barlow',
       }) =>
           TextStyle(
-        color: type == EText.title
-            ? const Color(0xFF565656)
-            : type == EText.error
-                ? const Color(0xFFD1512D)
-                : Colors.black,
+        color: getTextColor(type, context),
         fontSize: getDevice(context) == EDevice.mobile
             ? 12
             : getDevice(context) == EDevice.tablet
@@ -195,16 +168,12 @@ class AppThemeData extends ChangeNotifier {
       ),
       h5: ({
         required BuildContext context,
-        type = EText.title,
+        type = EText.body,
         weight = 400,
         fontFamily = 'Barlow',
       }) =>
           TextStyle(
-        color: type == EText.title
-            ? const Color(0xFF565656)
-            : type == EText.error
-                ? const Color(0xFFD1512D)
-                : Colors.black,
+        color: getTextColor(type, context),
         fontSize: getDevice(context) == EDevice.mobile
             ? 10
             : getDevice(context) == EDevice.tablet
@@ -215,10 +184,11 @@ class AppThemeData extends ChangeNotifier {
     ),
     color: const AppColor(
       primary: Color(0xFFE38B29),
-      secondary: Color(0xFF565656),
+      subtitle: Color(0xFF565656),
       container: Color(0xFFFAFAFA),
       error: Color(0xFFD1512D),
       background: Color(0xFF202123),
+      disabled: Color(0xFF898989),
     ),
   );
 }

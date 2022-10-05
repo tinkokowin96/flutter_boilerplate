@@ -1,8 +1,4 @@
-enum EText {
-  body,
-  error,
-  title,
-}
+enum EText { body, error, primary, white, subtitle }
 
 enum EDevice {
   mobile,
@@ -16,3 +12,11 @@ enum ERequestMethod {
   patch,
   delete,
 }
+
+enum ESize {
+  sm,
+  md,
+  lg,
+}
+
+enum EAsyncDropdown { tyep1 }
